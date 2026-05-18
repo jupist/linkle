@@ -1,0 +1,61 @@
+[
+  {
+    "id": "manishrivastava",
+    "type": "professional",
+    "name": "Manish Shrivastava",
+    "photo_url": "",
+    "education": [
+      {
+        "institution": "Indian Institute of Technology, Bombay",
+        "degree": "Doctor of Philosophy (PhD), Computer Science",
+        "year": "2003 - 2009",
+        "description": ""
+      },
+      {
+        "institution": "Rajiv Gandhi Prodyogiki Vishwavidyalaya",
+        "degree": "BE, Computer Science",
+        "year": "1999 - 2003",
+        "description": ""
+      }
+    ],
+    "experience": [
+      {
+        "role": "Associate Professor",
+        "company": "International Institute of Information Technology Hyderabad (IIITH)",
+        "duration": "Jan 2026 - Present",
+        "description": "Full-time • Hyderabad, Telangana, India • On-site • Higher Education, Graduate Level and +1 skill"
+      },
+      {
+        "role": "Assistant Professor",
+        "company": "International Institute of Information Technology Hyderabad (IIITH)",
+        "duration": "Jul 2014 - Dec 2025",
+        "description": "Greater Hyderabad Area"
+      },
+      {
+        "role": "Chief Scientific Advisor",
+        "company": "Alonzo AI",
+        "duration": "Jan 2025 - Present",
+        "description": "Hyderabad"
+      },
+      {
+        "role": "Co-founder, Chief Scientist",
+        "company": "Subtl.ai",
+        "duration": "Jan 2020 - Present",
+        "description": "Part-time • Hyderabad, Telangana, India • On-site"
+      },
+      {
+        "role": "Research Associate",
+        "company": "Indian Institute of Technology, Bombay",
+        "duration": "Jan 2013 - Jul 2014",
+        "description": "Mumbai Metropolitan Region"
+      },
+      {
+        "role": "Assistant Professor",
+        "company": "Indian Institute of InformationTechnology, Design and Manufacturing, Jabalpur, India",
+        "duration": "Nov 2008 - Dec 2012",
+        "description": ""
+      }
+    ],
+    "linkedin_url": "https://www.linkedin.com/in/manishrivastava/"
+  }
+]
