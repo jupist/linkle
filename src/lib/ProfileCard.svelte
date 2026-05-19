@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { cap, bag, lock, entryicon } from './icons.js';
 
+	const COLLAPSED = 3;
+
 	let {
 		title,
 		icontype,
@@ -18,6 +20,10 @@
 		fieldmeta: string;
 		revealcount: number;
 	} = $props();
+
+	let expanded = $state(false);
+	const visible = $derived(expanded ? entries : entries.slice(0, COLLAPSED));
+	const hasmore = $derived(entries.length > COLLAPSED);
 </script>
 
 <section class="profile-card">
@@ -26,7 +32,7 @@
 		<span>{title}</span>
 	</div>
 	<div class="entries">
-		{#each entries as e, i}
+		{#each visible as e, i}
 			{@const locked = revealcount != null && i >= revealcount}
 			<div class="entry {locked ? 'locked' : ''}">
 				<div class="entry-icon">
@@ -47,5 +53,11 @@
 				</div>
 			</div>
 		{/each}
+
+		{#if hasmore}
+			<button class="show-more" onclick={() => (expanded = !expanded)}>
+				{expanded ? 'Show less' : `+${entries.length - COLLAPSED} more`}
+			</button>
+		{/if}
 	</div>
 </section>
