@@ -17,7 +17,8 @@
 		revealmode = $bindable<'all' | 'progressive'>('all'),
 		onsubmitguess,
 		onnext,
-		onopenstats
+		onopenstats,
+		onexport
 	}: {
 		target: Profile;
 		guesses: Guess[];
@@ -29,6 +30,7 @@
 		onsubmitguess: (name: string) => void;
 		onnext: () => void;
 		onopenstats: () => void;
+		onexport: () => void;
 	} = $props();
 
 	let query = $state('');
@@ -165,6 +167,12 @@
 								One by one
 							</button>
 						</div>
+					</div>
+					<div class="settings-row">
+						<span class="settings-label">Export data</span>
+						<button class="btn btn-ghost" style="font-size: 13px; padding: 5px 12px;" onclick={onexport}>
+							Download JSON
+						</button>
 					</div>
 				</div>
 			{/if}

@@ -2,6 +2,7 @@
 	import GameScreen from '$lib/GameScreen.svelte';
 	import StatsScreen from '$lib/StatsScreen.svelte';
 	import profiles from '$lib/data/profiles.json';
+	import { recordsession, exportanalytics } from '$lib/analytics.js';
 
 	const STORAGEKEY = 'linkle:v2';
 	const MAXGUESSES = 6;
@@ -64,6 +65,7 @@
 	);
 	let lastguessnum = $state<number | null>(null);
 	let roundkey = $state(0);
+	let starttime = 0;
 
 	const guesses = $derived(toguesses(storedguesses, target.name));
 
@@ -90,6 +92,7 @@
 	});
 
 	function submitguess(name: string) {
+		if (!starttime) starttime = Date.now();
 		const next = [...storedguesses, name];
 		storedguesses = next;
 		cluesrevealed++;
@@ -102,6 +105,7 @@
 
 	function finishround(outcome: 'won' | 'lost', finalguesses: string[]) {
 		status = outcome;
+		const duration = starttime ? Math.round((Date.now() - starttime) / 1000) : 0;
 		const dist = [...stats.guess_distribution];
 		let newstreak = stats.streak;
 		let newwins = stats.wins;
@@ -122,16 +126,17 @@
 			guess_distribution: dist,
 			streak: newstreak
 		};
+		recordsession(target.id, finalguesses.length, outcome === 'won', duration);
 	}
 
 	function nextround() {
-		// reset seen if all profiles exhausted
 		if (profiles.every((p) => seen.includes(p.id))) seen = [];
 		target = pickrandom();
 		storedguesses = [];
 		cluesrevealed = 1;
 		status = 'playing';
 		view = 'game';
+		starttime = 0;
 		roundkey++;
 	}
 </script>
@@ -148,6 +153,7 @@
 		onsubmitguess={submitguess}
 		onnext={nextround}
 		onopenstats={() => (view = 'stats')}
+		onexport={exportanalytics}
 	/>
 {/key}
 
