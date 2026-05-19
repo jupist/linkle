@@ -7,7 +7,7 @@
 	const MAXGUESSES = 6;
 
 	type Profile = (typeof profiles)[0];
-	type Guess = { name: string | null; correct: boolean; skipped: boolean };
+	type Guess = { name: string; correct: boolean };
 	type Stats = {
 		played: number;
 		wins: number;
@@ -30,12 +30,12 @@
 		return pool[Math.floor(Math.random() * pool.length)];
 	}
 
-	/** convert stored (string|null)[] to typed Guess[] using target name for correctness */
-	function toguesses(stored: (string | null)[], targetname: string): Guess[] {
-		return stored.map((g) => {
-			if (g === null) return { name: null, correct: false, skipped: true };
-			return { name: g, correct: g === targetname, skipped: false };
-		});
+	/** convert stored string[] to typed Guess[] using target name for correctness */
+	function toguesses(stored: string[], targetname: string): Guess[] {
+		return stored.map((g) => ({
+			name: g,
+			correct: g === targetname
+		}));
 	}
 
 	const saved = loadstate();
@@ -57,9 +57,11 @@
 	let revealmode = $state<'all' | 'progressive'>(saved?.revealmode ?? 'all');
 	let view = $state<'game' | 'stats'>('game');
 	let target = $state<Profile>(validid ? initialtarget : pickrandom());
-	let storedguesses = $state<(string | null)[]>(validid ? (savedcurrent.guesses ?? []) : []);
+	let storedguesses = $state<string[]>(validid ? (savedcurrent.guesses ?? []) : []);
 	let cluesrevealed = $state<number>(validid ? (savedcurrent.clues_revealed ?? 1) : 1);
-	let status = $state<'playing' | 'won' | 'lost'>(validid ? (savedcurrent.status ?? 'playing') : 'playing');
+	let status = $state<'playing' | 'won' | 'lost'>(
+		validid ? (savedcurrent.status ?? 'playing') : 'playing'
+	);
 	let lastguessnum = $state<number | null>(null);
 	let roundkey = $state(0);
 
@@ -98,14 +100,7 @@
 		}
 	}
 
-	function skipguess() {
-		const next = [...storedguesses, null];
-		storedguesses = next;
-		cluesrevealed++;
-		if (next.length >= MAXGUESSES) finishround('lost', next);
-	}
-
-	function finishround(outcome: 'won' | 'lost', finalguesses: (string | null)[]) {
+	function finishround(outcome: 'won' | 'lost', finalguesses: string[]) {
 		status = outcome;
 		const dist = [...stats.guess_distribution];
 		let newstreak = stats.streak;
@@ -121,7 +116,12 @@
 			lastguessnum = null;
 		}
 		seen = [...seen, target.id];
-		stats = { played: stats.played + 1, wins: newwins, guess_distribution: dist, streak: newstreak };
+		stats = {
+			played: stats.played + 1,
+			wins: newwins,
+			guess_distribution: dist,
+			streak: newstreak
+		};
 	}
 
 	function nextround() {
@@ -136,22 +136,25 @@
 	}
 </script>
 
+{#key roundkey}
+	<GameScreen
+		{target}
+		{guesses}
+		{status}
+		{cluesrevealed}
+		maxguesses={MAXGUESSES}
+		bind:dark
+		bind:revealmode
+		onsubmitguess={submitguess}
+		onnext={nextround}
+		onopenstats={() => (view = 'stats')}
+	/>
+{/key}
+
 {#if view === 'stats'}
-	<StatsScreen {stats} {lastguessnum} onback={() => (view = 'game')} />
-{:else}
-	{#key roundkey}
-		<GameScreen
-			{target}
-			{guesses}
-			{status}
-			{cluesrevealed}
-			maxguesses={MAXGUESSES}
-			bind:dark
-			bind:revealmode
-			onsubmitguess={submitguess}
-			onskip={skipguess}
-			onnext={nextround}
-			onopenstats={() => (view = 'stats')}
-		/>
-	{/key}
+	<div class="modal-overlay" onclick={() => (view = 'game')}>
+		<div class="modal-content" onclick={(e) => e.stopPropagation()}>
+			<StatsScreen {stats} {lastguessnum} onback={() => (view = 'game')} />
+		</div>
+	</div>
 {/if}

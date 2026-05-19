@@ -71,7 +71,12 @@ body {
 }
 
 body {
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	font-family:
+		'Inter',
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		sans-serif;
 	font-feature-settings: 'cv11', 'ss01';
 	background: var(--bg);
 	color: var(--ink);
@@ -196,10 +201,6 @@ a:hover {
 	background: var(--accent);
 }
 
-.counter-pill .dot.skipped {
-	background: var(--ink-muted);
-}
-
 .btn {
 	display: inline-flex;
 	align-items: center;
@@ -252,6 +253,37 @@ a:hover {
 
 .icon-btn:hover {
 	background: var(--bg);
+}
+
+@media (max-width: 640px) {
+	.topbar {
+		padding: 8px 12px;
+	}
+
+	.brand {
+		font-size: 18px;
+		gap: 6px;
+	}
+
+	.brand .logo {
+		width: 26px;
+		height: 26px;
+		font-size: 14px;
+	}
+
+	.counter-pill {
+		display: inline-flex;
+		padding: 4px 8px;
+		font-size: 12px;
+	}
+
+	.counter-pill .dot-row {
+		display: none;
+	}
+
+	.topbar-right {
+		gap: 4px;
+	}
 }
 
 /* ---------- Settings panel ---------- */
@@ -523,17 +555,12 @@ a:hover {
 
 .show-more {
 	width: 100%;
-	padding: 8px 0;
+	padding: 12px 0 0;
 	font-size: 13px;
 	font-weight: 600;
 	color: var(--accent);
 	text-align: center;
-	border-top: 1px solid var(--border);
-	margin-top: 4px;
-}
-
-.show-more:hover {
-	background: var(--accent-soft);
+	margin-top: 0;
 }
 
 /* ---------- Game layout ---------- */
@@ -557,46 +584,140 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
-	padding-bottom: 24px;
+	padding-bottom: 16px;
 }
 
 .game-footer {
 	flex-shrink: 0;
-	padding: 0 16px 16px;
-	background: transparent;
+	background: var(--surface);
+	border-top: 1px solid var(--border);
+	box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+	display: none;
 }
 
-@media (min-width: 768px) {
-	.game-screen {
-		display: block;
-		height: auto;
-		overflow: visible;
-	}
-
-	.game-scroll {
-		overflow: visible;
-	}
-
+@media (max-width: 760px) {
 	.game-footer {
-		padding: 0;
+		display: flex;
 	}
 
 	.game-footer-inner {
-		max-width: 1080px;
-		padding: 18px 22px 20px;
-		border-radius: var(--radius);
-		margin: 0 auto 16px;
+		padding: 12px 8px;
+		max-width: none;
+	}
+
+	.guess-label {
+		display: none;
 	}
 }
 
 .game-footer-inner {
 	max-width: 1080px;
 	margin: 0 auto;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+/* ---------- Desktop answer section ---------- */
+
+.desktop-answer-section {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 	background: var(--surface);
-	border: 1px solid var(--border);
 	border-radius: var(--radius);
-	box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.08), var(--shadow-card);
-	padding: 14px 22px 18px;
+	box-shadow: var(--shadow-card);
+	padding: 18px 22px 20px;
+}
+
+@media (max-width: 760px) {
+	.desktop-answer-section {
+		display: none;
+	}
+}
+
+.desktop-past-answers {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin-top: 12px;
+}
+
+.desktop-past-answers .guess-row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 8px 10px;
+	border-radius: 6px;
+	background: var(--bg);
+	font-size: 14px;
+}
+
+.mobile-past-answers {
+	display: none;
+	background: var(--surface);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-card);
+	padding: 16px 22px;
+	margin-top: 16px;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.mobile-past-answers .guess-row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 8px 10px;
+	border-radius: 6px;
+	background: var(--bg);
+	font-size: 14px;
+}
+
+.mobile-past-answers .guess-row:last-child {
+	border-bottom: none;
+}
+
+@media (max-width: 760px) {
+	.mobile-past-answers {
+		display: flex;
+	}
+}
+
+.desktop-guess-card {
+	background: var(--surface);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-card);
+	overflow: hidden;
+}
+
+.desktop-guess-card .card-header {
+	display: flex;
+	align-items: center;
+	padding: 16px 22px;
+	border-bottom: 1px solid var(--border);
+	font-weight: 600;
+	font-size: 17px;
+	color: var(--ink);
+	letter-spacing: -0.01em;
+}
+
+.desktop-guess-card .entries {
+	padding: 12px 22px;
+}
+
+.desktop-guess-card .guess-row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 0;
+	border-bottom: 1px solid var(--border);
+	font-size: 14px;
+}
+
+.desktop-guess-card .guess-row:last-child {
+	border-bottom: none;
 }
 
 /* ---------- Guess panel ---------- */
@@ -647,7 +768,7 @@ a:hover {
 	transform: translateY(-50%);
 	width: 38px;
 	height: 38px;
-	border-radius: 50%;
+	border-radius: 8px;
 	background: var(--accent);
 	color: white;
 	display: grid;
@@ -757,12 +878,6 @@ a:hover {
 	color: var(--ink-muted);
 }
 
-.guess-row.skipped {
-	background: var(--bg);
-	color: var(--ink-muted);
-	font-style: italic;
-}
-
 .guess-row.correct {
 	background: var(--success-bg);
 	color: var(--success);
@@ -799,10 +914,6 @@ a:hover {
 	color: var(--success);
 }
 
-.guess-row.skipped .guess-icon {
-	color: var(--ink-muted);
-}
-
 /* ---------- Result card ---------- */
 
 .result-card {
@@ -834,6 +945,15 @@ a:hover {
 .result-badge.loss {
 	background: var(--danger-bg);
 	color: var(--danger);
+}
+
+.result-photo {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin: 4px 0 -2px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .result-name {
@@ -873,24 +993,57 @@ a:hover {
 
 /* ---------- Stats page ---------- */
 
-.stats-page {
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	padding: 16px;
+}
+
+.modal-content {
+	max-width: 540px;
+	width: 100%;
+	max-height: 90vh;
+	overflow-y: auto;
+}
+
+.stats-modal {
 	background: var(--surface);
 	border-radius: var(--radius);
-	box-shadow: var(--shadow-card);
-	padding: 28px 32px 32px;
-	max-width: 640px;
-	margin: 0 auto;
-	width: 100%;
+	box-shadow: var(--shadow-pop);
+	padding: 24px 28px 28px;
+}
+
+.stats-modal-header {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	margin-bottom: 20px;
 }
 
 .stats-back {
-	display: inline-flex;
+	flex-shrink: 0;
+	width: 32px;
+	height: 32px;
+	display: flex;
 	align-items: center;
-	gap: 6px;
+	justify-content: center;
 	color: var(--ink-soft);
-	font-size: 14px;
-	font-weight: 500;
-	margin-bottom: 18px;
+	font-size: 16px;
+	border-radius: 50%;
+	transition: background 0.15s;
+	cursor: pointer;
+}
+
+.stats-back:hover {
+	background: var(--bg);
 }
 
 .stats-back:hover {
@@ -898,23 +1051,22 @@ a:hover {
 }
 
 .stats-title {
-	font-size: 28px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: -0.02em;
-	margin-bottom: 4px;
+	margin-bottom: 2px;
 }
 
 .stats-subtitle {
-	font-size: 14px;
+	font-size: 13px;
 	color: var(--ink-muted);
-	margin-bottom: 24px;
 }
 
 .stat-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 12px;
-	margin-bottom: 32px;
+	margin: 18px 0 24px;
 }
 
 .stat-card {
@@ -997,6 +1149,33 @@ a:hover {
 
 .dist-bar-fill.highlight {
 	background: var(--success);
+}
+
+@media (max-width: 640px) {
+	.modal-overlay {
+		padding: 12px;
+	}
+
+	.modal-content {
+		max-width: 100%;
+	}
+
+	.stats-modal {
+		padding: 20px;
+	}
+
+	.stats-modal-header {
+		margin-bottom: 16px;
+	}
+
+	.stat-grid {
+		margin: 14px 0 20px;
+	}
+
+	.distribution-title {
+		font-size: 14px;
+		margin-bottom: 12px;
+	}
 }
 
 /* footer hint */

@@ -1,11 +1,11 @@
 <script lang="ts">
 	import ProfileCard from './ProfileCard.svelte';
 	import ResultCard from './ResultCard.svelte';
-	import { send, skip, chart, gear, x, check, initials } from './icons.js';
+	import { send, chart, gear, x, check, initials } from './icons.js';
 	import profiles from './data/profiles.json';
 
 	type Profile = (typeof profiles)[0];
-	type Guess = { name: string | null; correct: boolean; skipped: boolean };
+	type Guess = { name: string | null; correct: boolean };
 
 	let {
 		target,
@@ -16,7 +16,6 @@
 		dark = $bindable(false),
 		revealmode = $bindable<'all' | 'progressive'>('all'),
 		onsubmitguess,
-		onskip,
 		onnext,
 		onopenstats
 	}: {
@@ -28,7 +27,6 @@
 		dark: boolean;
 		revealmode: 'all' | 'progressive';
 		onsubmitguess: (name: string) => void;
-		onskip: () => void;
 		onnext: () => void;
 		onopenstats: () => void;
 	} = $props();
@@ -114,15 +112,12 @@
 					<span class="name">linkl<em>e</em></span>
 				</div>
 				<div class="topbar-right">
-					<button class="btn btn-ghost" onclick={onskip} disabled={ended}>
-						{@html skip} Skip
-					</button>
 					<div class="counter-pill" title="{usedcount} of {maxguesses} used">
 						<span>{usedcount}/{maxguesses}</span>
 						<span class="dot-row">
 							{#each Array.from({ length: maxguesses }) as _, i}
 								{@const g = guesses[i]}
-								<span class="dot {g ? (g.skipped ? 'skipped' : 'used') : ''}"></span>
+								<span class="dot {g ? 'used' : ''}"></span>
 							{/each}
 						</span>
 					</div>
@@ -174,35 +169,6 @@
 				</div>
 			{/if}
 
-			<div class="mystery-banner">
-				<div class="redacted-avatar"></div>
-				<div class="redacted-info">
-					<div class="redacted-name"></div>
-					<div class="redacted-tag">— guess who, from their profile below</div>
-				</div>
-			</div>
-
-			<div class="cards">
-				<ProfileCard
-					title="Education"
-					icontype="education"
-					entries={target.education}
-					fieldheading="institution"
-					fieldsub="degree"
-					fieldmeta="year"
-					revealcount={reveals.edu}
-				/>
-				<ProfileCard
-					title="Experience"
-					icontype="experience"
-					entries={target.experience}
-					fieldheading="company"
-					fieldsub="role"
-					fieldmeta="duration"
-					revealcount={reveals.exp}
-				/>
-			</div>
-
 			{#if ended}
 				<ResultCard
 					{target}
@@ -211,9 +177,115 @@
 					{onnext}
 					onstats={onopenstats}
 				/>
+			{:else}
+				<div class="cards">
+					<ProfileCard
+						title="Education"
+						icontype="education"
+						entries={target.education}
+						fieldheading="institution"
+						fieldsub="degree"
+						fieldmeta="year"
+						revealcount={reveals.edu}
+					/>
+					<ProfileCard
+						title="Experience"
+						icontype="experience"
+						entries={target.experience}
+						fieldheading="company"
+						fieldsub="role"
+						fieldmeta="duration"
+						revealcount={reveals.exp}
+					/>
+				</div>
 			{/if}
 
-			<div class="hint">Profiles are fictional, for prototype use only.</div>
+			<!-- Mobile past answers -->
+			{#if !ended && guesses.length > 0}
+				<div class="mobile-past-answers">
+					{#each [...guesses].reverse() as g, i}
+						<div class="guess-row {g.correct ? 'correct' : 'wrong'}">
+							<span class="guess-num">{guesses.length - i}</span>
+							<span class="guess-icon">
+								{#if g.correct}
+									{@html check}
+								{:else}
+									{@html x}
+								{/if}
+							</span>
+							<span class="guess-name">{g.name}</span>
+						</div>
+					{/each}
+				</div>
+			{/if}
+
+			<!-- Desktop answer section -->
+			{#if !ended}
+				<div class="desktop-answer-section">
+					<div class="guess-label">Your guess — {maxguesses - usedcount} left</div>
+					<div class="guess-input-wrap">
+						<input
+							class="guess-input"
+							placeholder="Type a name…"
+							value={query}
+							oninput={(e) => {
+								query = (e.currentTarget as HTMLInputElement).value;
+								showautocomplete = true;
+								activeidx = 0;
+							}}
+							onfocus={() => (showautocomplete = true)}
+							onblur={() => setTimeout(() => (showautocomplete = false), 120)}
+							onkeydown={onkey}
+							autocomplete="off"
+							spellcheck={false}
+						/>
+						<button class="guess-submit" onclick={handlesubmit} disabled={suggestions.length === 0}>
+							{@html send}
+						</button>
+						{#if showautocomplete && suggestions.length > 0}
+							<div class="autocomplete autocomplete-up" role="listbox">
+								{#each suggestions as p, i}
+									<div
+										class="autocomplete-item {i === activeidx ? 'active' : ''}"
+										role="option"
+										tabindex="-1"
+										aria-selected={i === activeidx}
+										onmousedown={(e) => {
+											e.preventDefault();
+											submit(p.name);
+										}}
+										onmouseenter={() => (activeidx = i)}
+									>
+										<div class="autocomplete-avatar">{initials(p.name)}</div>
+										<div class="autocomplete-text">
+											<div class="autocomplete-name">{p.name}</div>
+											<div class="autocomplete-role">{p.type}</div>
+										</div>
+									</div>
+								{/each}
+							</div>
+						{/if}
+					</div>
+
+					{#if guesses.length > 0}
+						<div class="desktop-past-answers">
+							{#each [...guesses].reverse() as g, i}
+								<div class="guess-row {g.correct ? 'correct' : 'wrong'}">
+									<span class="guess-num">{guesses.length - i}</span>
+									<span class="guess-icon">
+										{#if g.correct}
+											{@html check}
+										{:else}
+											{@html x}
+										{/if}
+									</span>
+									<span class="guess-name">{g.name}</span>
+								</div>
+							{/each}
+						</div>
+					{/if}
+				</div>
+			{/if}
 		</div>
 	</div>
 
@@ -265,26 +337,6 @@
 						</div>
 					{/if}
 				</div>
-
-				{#if guesses.length > 0}
-					<div class="guess-list">
-						{#each guesses as g, i}
-							<div class="guess-row {g.skipped ? 'skipped' : g.correct ? 'correct' : 'wrong'}">
-								<span class="guess-num">{i + 1}</span>
-								<span class="guess-icon">
-									{#if g.skipped}
-										{@html skip}
-									{:else if g.correct}
-										{@html check}
-									{:else}
-										{@html x}
-									{/if}
-								</span>
-								<span class="guess-name">{g.skipped ? 'Skipped' : g.name}</span>
-							</div>
-						{/each}
-					</div>
-				{/if}
 			</div>
 		</div>
 	{/if}

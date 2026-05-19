@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { cap, bag, lock, entryicon } from './icons.js';
 
-	const COLLAPSED = 3;
+	const COLLAPSED = 5;
 
 	let {
 		title,

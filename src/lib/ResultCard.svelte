@@ -27,6 +27,9 @@
 	<span class="result-badge {won ? 'win' : 'loss'}">
 		{won ? `Got it in ${guessnum}` : 'Out of guesses'}
 	</span>
+
+	<img src={target.photo_url || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(target.name) + '&background=random'} alt={target.name} class="result-photo" />
+
 	<div class="result-name">{target.name}</div>
 	<div class="result-role">{target.type} · IIIT Hyderabad</div>
 	<a class="result-link" href={target.linkedin_url} target="_blank" rel="noopener noreferrer">
