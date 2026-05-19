@@ -3,7 +3,7 @@
     "id": "manishrivastava",
     "type": "faculty",
     "name": "Manish Shrivastava",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
       {
         "institution": "Indian Institute of Technology, Bombay",
@@ -26,51 +26,45 @@
     ],
     "experience": [
       {
-        "role": "International Institute of Information Technology Hyderabad (IIITH)",
-        "company": "11 yrs 11 mos",
-        "duration": "Jan 2026 - Present · 5 mos",
-        "description": ""
-      },
-      {
         "role": "Associate Professor",
-        "company": "Full-time",
-        "duration": "Jan 2026 - Present · 5 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "Jan 2026 – Present",
         "description": ""
       },
       {
         "role": "Assistant Professor",
-        "company": "",
-        "duration": "Jul 2014 - Dec 2025 · 11 yrs 6 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "Jul 2014 – Dec 2025 · 11 yrs 6 mos",
         "description": ""
       },
       {
         "role": "Chief Scientific Advisor",
         "company": "Alonzo AI",
-        "duration": "Jan 2025 - Present · 1 yr 5 mos",
+        "duration": "Jan 2025 – Present",
         "description": ""
       },
       {
         "role": "Co-founder, Chief Scientist",
         "company": "Subtl.ai",
-        "duration": "Jan 2020 - Present · 6 yrs 5 mos",
+        "duration": "Jan 2020 – Present",
         "description": ""
       },
       {
         "role": "Research Associate",
         "company": "Indian Institute of Technology, Bombay",
-        "duration": "Jan 2013 - Jul 2014 · 1 yr 7 mos",
+        "duration": "Jan 2013 – Jul 2014 · 1 yr 7 mos",
         "description": ""
       },
       {
         "role": "Assistant Professor",
-        "company": "Indian Institute of InformationTechnology, Design and Manufacturing, Jabalpur, India",
-        "duration": "Nov 2008 - Dec 2012 · 4 yrs 2 mos",
+        "company": "Indian Institute of Information Technology, Design and Manufacturing, Jabalpur",
+        "duration": "Nov 2008 – Dec 2012 · 4 yrs 2 mos",
         "description": ""
       },
       {
         "role": "Research Scholar",
         "company": "IIT Bombay",
-        "duration": "Jul 2003 - Nov 2008 · 5 yrs 5 mos",
+        "duration": "Jul 2003 – Nov 2008 · 5 yrs 5 mos",
         "description": ""
       }
     ],
@@ -80,13 +74,13 @@
     "id": "girish-varma-4573a4211",
     "type": "faculty",
     "name": "Girish Varma",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [],
     "experience": [
       {
         "role": "Assistant Professor",
         "company": "IIIT Hyderabad",
-        "duration": "About",
+        "duration": "",
         "description": ""
       }
     ],
@@ -96,11 +90,11 @@
     "id": "ks-rajan-4327a811",
     "type": "faculty",
     "name": "KS Rajan",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
       {
         "institution": "The University of Tokyo",
-        "degree": "PhD, MEngg, Civil Engineering - GIS and Remote Sensing",
+        "degree": "PhD, MEngg, Civil Engineering – GIS and Remote Sensing",
         "year": "1993 – 1999",
         "description": ""
       },
@@ -121,19 +115,19 @@
       {
         "role": "Professor",
         "company": "IIIT Hyderabad",
-        "duration": "Sep 2006 - Present · 19 yrs 9 mos",
+        "duration": "Sep 2006 – Present · 19 yrs 9 mos",
         "description": ""
       },
       {
         "role": "Treasurer",
         "company": "OSGeo-India",
-        "duration": "Jan 2007 - Present · 19 yrs 5 mos",
+        "duration": "Jan 2007 – Present · 19 yrs 5 mos",
         "description": ""
       },
       {
         "role": "Research Associate",
         "company": "The University of Tokyo",
-        "duration": "Dec 1999 - Aug 2006 · 6 yrs 9 mos",
+        "duration": "Dec 1999 – Aug 2006 · 6 yrs 9 mos",
         "description": ""
       }
     ],
@@ -143,7 +137,7 @@
     "id": "radhika41",
     "type": "faculty",
     "name": "Radhika Mamidi",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
       {
         "institution": "University of Hyderabad",
@@ -154,45 +148,39 @@
     ],
     "experience": [
       {
-        "role": "International Institute of Information Technology",
-        "company": "15 yrs",
-        "duration": "Jan 2018 - Present · 8 yrs 5 mos",
-        "description": ""
-      },
-      {
         "role": "Associate Professor",
-        "company": "Full-time",
-        "duration": "Jan 2018 - Present · 8 yrs 5 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "Jan 2018 – Present · 8 yrs 5 mos",
         "description": ""
       },
       {
         "role": "Assistant Professor",
-        "company": "",
-        "duration": "Jun 2011 - Dec 2017 · 6 yrs 7 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "Jun 2011 – Dec 2017 · 6 yrs 7 mos",
         "description": ""
       },
       {
         "role": "Assistant Professor",
         "company": "Prince Sultan University",
-        "duration": "Feb 2006 - Jun 2011 · 5 yrs 5 mos",
+        "duration": "Feb 2006 – Jun 2011 · 5 yrs 5 mos",
         "description": ""
       },
       {
         "role": "Research Scientist",
         "company": "IIIT Hyderabad",
-        "duration": "Jun 2003 - Feb 2006 · 2 yrs 9 mos",
+        "duration": "Jun 2003 – Feb 2006 · 2 yrs 9 mos",
         "description": ""
       },
       {
         "role": "Lecturer",
         "company": "Dr. L. Bullayya Post Graduate College, Visakhapatnam",
-        "duration": "Sep 2001 - Apr 2003 · 1 yr 8 mos",
+        "duration": "Sep 2001 – Apr 2003 · 1 yr 8 mos",
         "description": ""
       },
       {
         "role": "Research Linguist",
         "company": "C-DAC (Formerly NCST)",
-        "duration": "Jul 1996 - Jun 1999 · 3 yrs",
+        "duration": "Jul 1996 – Jun 1999 · 3 yrs",
         "description": ""
       }
     ],
@@ -202,7 +190,7 @@
     "id": "vinoo-alluri-05930125",
     "type": "faculty",
     "name": "Vinoo Alluri",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
       {
         "institution": "University of Jyväskylä",
@@ -217,14 +205,14 @@
         "description": ""
       },
       {
-        "institution": "Vasavi College of Engg",
-        "degree": "Bachelor of Engineering - BE, Electrical, Electronics and Communications Engineering",
+        "institution": "Vasavi College of Engineering",
+        "degree": "Bachelor of Engineering, Electrical, Electronics and Communications Engineering",
         "year": "2000 – 2004",
         "description": ""
       },
       {
         "institution": "BVBPS",
-        "degree": "Doctor of Philosophy (PhD), Musicology",
+        "degree": "Schooling",
         "year": "2008 – 2012",
         "description": ""
       }
@@ -232,62 +220,38 @@
     "experience": [
       {
         "role": "Assistant Professor",
-        "company": "International Institute of Information Technology",
-        "duration": "Jul 2017 - Present · 8 yrs 11 mos",
+        "company": "International Institute of Information Technology Hyderabad",
+        "duration": "Jul 2017 – Present · 8 yrs 11 mos",
         "description": ""
       },
       {
         "role": "Postdoctoral Researcher",
         "company": "University of Geneva",
-        "duration": "Jun 2014 - May 2016 · 2 yrs",
+        "duration": "Jun 2014 – May 2016 · 2 yrs",
         "description": ""
       },
       {
         "role": "Post-Doctoral Researcher",
         "company": "University of Jyväskylä",
-        "duration": "May 2014 - May 2016 · 2 yrs 1 mo",
+        "duration": "Jan 2012 – Jul 2013 · 1 yr 7 mos",
         "description": ""
       },
       {
-        "role": "Post-Doctoral Researcher",
-        "company": "University of Jyväskylä",
-        "duration": "Jan 2012 - Jul 2013 · 1 yr 7 mos",
-        "description": ""
-      },
-      {
-        "role": "Audio Consultant",
-        "company": "IMImobile",
-        "duration": "Jul 2007 - Oct 2007 · 4 mos",
+        "role": "Teacher",
+        "company": "Rishi Valley School",
+        "duration": "Dec 2004 – May 2005 · 6 mos",
         "description": ""
       },
       {
         "role": "Teaching Assistant",
         "company": "University of Miami",
-        "duration": "Aug 2006 - May 2007 · 10 mos",
-        "description": ""
-      },
-      {
-        "role": "Rishi Valley School",
-        "company": "6 mos",
-        "duration": "Dec 2004 - May 2005 · 6 mos",
-        "description": ""
-      },
-      {
-        "role": "Teacher",
-        "company": "",
-        "duration": "Dec 2004 - May 2005 · 6 mos",
-        "description": ""
-      },
-      {
-        "role": "Teacher",
-        "company": "",
-        "duration": "Dec 2004 - May 2005 · 6 mos",
+        "duration": "Aug 2006 – May 2007 · 10 mos",
         "description": ""
       },
       {
         "role": "Audio Consultant",
         "company": "IMImobile",
-        "duration": "Aug 2004 - Oct 2004 · 3 mos",
+        "duration": "Jul 2007 – Oct 2007 · 4 mos",
         "description": ""
       }
     ],
@@ -297,14 +261,8 @@
     "id": "ponguru",
     "type": "faculty",
     "name": "Ponnurangam Kumaraguru (PK)",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
-      {
-        "institution": "Carnegie Mellon University",
-        "degree": "",
-        "year": "2004 – 2009",
-        "description": ""
-      },
       {
         "institution": "Carnegie Mellon University",
         "degree": "M.S., Computer Science",
@@ -313,178 +271,58 @@
       },
       {
         "institution": "University of Madras",
-        "degree": "B.E., Electronics and Communciation",
+        "degree": "B.E., Electronics and Communication",
         "year": "1994 – 1998",
         "description": ""
       }
     ],
     "experience": [
       {
-        "role": "Vice President",
-        "company": "ACM India",
-        "duration": "Jul 2024 - Present · 1 yr 11 mos",
-        "description": ""
-      },
-      {
-        "role": "IIIT Hyderabad",
-        "company": "8 yrs 1 mo",
-        "duration": "Jun 2021 - Present · 5 yrs",
-        "description": ""
-      },
-      {
         "role": "Professor",
-        "company": "Full-time",
-        "duration": "Jun 2021 - Present · 5 yrs",
+        "company": "IIIT Hyderabad",
+        "duration": "Jun 2021 – Present · 5 yrs",
         "description": ""
       },
       {
         "role": "Visiting Associate Professor of Computer Science",
-        "company": "",
-        "duration": "May 2018 - Jun 2021 · 3 yrs 2 mos",
-        "description": ""
-      },
-      {
-        "role": "Precog-at-IIITH",
-        "company": "16 yrs 10 mos",
-        "duration": "Jun 2021 - Present · 5 yrs",
-        "description": ""
-      },
-      {
-        "role": "Founder",
-        "company": "Full-time",
-        "duration": "Jun 2021 - Present · 5 yrs",
-        "description": ""
-      },
-      {
-        "role": "Founder",
-        "company": "",
-        "duration": "Aug 2009 - Jun 2021 · 11 yrs 11 mos",
-        "description": ""
-      },
-      {
-        "role": "Angel Investor",
-        "company": "Self",
-        "duration": "Aug 2021 - Jul 2024 · 3 yrs",
-        "description": ""
-      },
-      {
-        "role": "Senior Research Associate",
-        "company": "Artificial Intelligence Institute at University of South Carolina",
-        "duration": "May 2023 - Jul 2023 · 3 mos",
-        "description": ""
-      },
-      {
-        "role": "Researcher on Winter Sabbatical (in-person)",
-        "company": "Koo India",
-        "duration": "Dec 2021 · 1 mo",
-        "description": ""
-      },
-      {
-        "role": "Indraprastha Institute of Information Technology, Delhi",
-        "company": "11 yrs 11 mos",
-        "duration": "Aug 2019 - Jun 2021 · 1 yr 11 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "May 2018 – Jun 2021 · 3 yrs 2 mos",
         "description": ""
       },
       {
         "role": "Professor",
-        "company": "Full-time",
-        "duration": "Aug 2019 - Jun 2021 · 1 yr 11 mos",
+        "company": "Indraprastha Institute of Information Technology, Delhi",
+        "duration": "Aug 2019 – Jun 2021 · 1 yr 11 mos",
         "description": ""
       },
       {
         "role": "Associate Professor of Computer Science",
-        "company": "",
-        "duration": "Aug 2015 - Jul 2019 · 4 yrs",
+        "company": "Indraprastha Institute of Information Technology, Delhi",
+        "duration": "Aug 2015 – Jul 2019 · 4 yrs",
         "description": ""
       },
       {
         "role": "Assistant Professor of Computer Science",
-        "company": "",
-        "duration": "Aug 2009 - Jul 2015 · 6 yrs",
+        "company": "Indraprastha Institute of Information Technology, Delhi",
+        "duration": "Aug 2009 – Jul 2015 · 6 yrs",
         "description": ""
       },
       {
-        "role": "Founding Head",
-        "company": "Cybersecurity Education and Research Centre (CERC) @ IIIT Delhi",
-        "duration": "Jan 2014 - Jun 2021 · 7 yrs 6 mos",
+        "role": "Founding Head, Cybersecurity Education and Research Centre (CERC)",
+        "company": "IIIT Delhi",
+        "duration": "Jan 2014 – Jun 2021 · 7 yrs 6 mos",
         "description": ""
       },
       {
-        "role": "Visiting Researcher",
-        "company": "Data Security Council of India",
-        "duration": "Aug 2015 - Aug 2019 · 4 yrs 1 mo",
-        "description": ""
-      },
-      {
-        "role": "Co-Founder and Advisor",
-        "company": "Backpack Labs",
-        "duration": "May 2014 - Jul 2015 · 1 yr 3 mos",
-        "description": ""
-      },
-      {
-        "role": "Co-Founder",
-        "company": "Innovate Delhi Entrepreneurship Academy",
-        "duration": "Aug 2013 - Jul 2015 · 2 yrs",
-        "description": ""
-      },
-      {
-        "role": "Technical Advisor",
-        "company": "MixOrg",
-        "duration": "Jan 2014 - Jan 2015 · 1 yr 1 mo",
-        "description": ""
-      },
-      {
-        "role": "Carnegie Mellon University",
-        "company": "6 yrs",
-        "duration": "Jun 2009 - Jul 2009 · 2 mos",
-        "description": ""
-      },
-      {
-        "role": "Research Associate",
-        "company": "",
-        "duration": "Jun 2009 - Jul 2009 · 2 mos",
-        "description": ""
-      },
-      {
-        "role": "Ph.D. student",
-        "company": "",
-        "duration": "Aug 2004 - May 2009 · 4 yrs 10 mos",
-        "description": ""
-      },
-      {
-        "role": "Research Scholar",
-        "company": "",
-        "duration": "Aug 2003 - Aug 2004 · 1 yr 1 mo",
-        "description": ""
-      },
-      {
-        "role": "Summer Intern",
-        "company": "National Association of Software and Service Companies (NASSCOM)",
-        "duration": "May 2007 - Aug 2007 · 4 mos",
-        "description": ""
-      },
-      {
-        "role": "Summer Intern",
-        "company": "National Association of Software and Service Companies (NASSCOM)",
-        "duration": "May 2006 - Aug 2006 · 4 mos",
+        "role": "Vice President",
+        "company": "ACM India",
+        "duration": "Jul 2024 – Present · 1 yr 11 mos",
         "description": ""
       },
       {
         "role": "Research Scientist",
-        "company": "International Institute of Information Technology, Hyderabad",
-        "duration": "Jan 2003 - Aug 2004 · 1 yr 8 mos",
-        "description": ""
-      },
-      {
-        "role": "Senior Knowledge Officer",
-        "company": "SlashSupport",
-        "duration": "Apr 2000 - Dec 2002 · 2 yrs 9 mos",
-        "description": ""
-      },
-      {
-        "role": "Design Engineer",
-        "company": "Genus Overseas Electronics Private Limited",
-        "duration": "Aug 1999 - Mar 2000 · 8 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "Jan 2003 – Aug 2004 · 1 yr 8 mos",
         "description": ""
       }
     ],
@@ -494,7 +332,7 @@
     "id": "madhava-krishna-49371313",
     "type": "faculty",
     "name": "Madhava Krishna",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
       {
         "institution": "Indian Institute of Technology, Kanpur",
@@ -507,7 +345,7 @@
       {
         "role": "Professor",
         "company": "IIIT Hyderabad",
-        "duration": "Apr 2005 - Present · 21 yrs 2 mos",
+        "duration": "Apr 2005 – Present · 21 yrs 2 mos",
         "description": ""
       }
     ],
@@ -517,13 +355,13 @@
     "id": "cv-jawahar-849376318",
     "type": "faculty",
     "name": "CV Jawahar",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [],
     "experience": [
       {
-        "role": "Professor and Dean(R&D)",
-        "company": "International Institute of Information Technology Hyderabad (IIITH)",
-        "duration": "About",
+        "role": "Professor and Dean (R&D)",
+        "company": "IIIT Hyderabad",
+        "duration": "",
         "description": ""
       }
     ],
@@ -533,23 +371,17 @@
     "id": "karthikv1392",
     "type": "faculty",
     "name": "Karthik Vaidhyanathan",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
       {
-        "institution": "GSSI - Gran Sasso Science Institute",
-        "degree": "Doctor of Philosophy - PhD, Computer Science",
-        "year": "Nov 2017 – Jan 2021",
+        "institution": "GSSI – Gran Sasso Science Institute",
+        "degree": "Doctor of Philosophy (PhD), Computer Science",
+        "year": "2017 – 2021",
         "description": ""
       },
       {
         "institution": "Università degli Studi dell'Aquila",
-        "degree": "Master’s Degree, Software Engineering for Adaptive Systems",
-        "year": "2014 – 2016",
-        "description": ""
-      },
-      {
-        "institution": "Amrita Vishwa Vidyapeetham",
-        "degree": "Master’s Degree, Computer Science",
+        "degree": "Master's Degree, Software Engineering for Adaptive Systems",
         "year": "2014 – 2016",
         "description": ""
       },
@@ -568,93 +400,45 @@
     ],
     "experience": [
       {
-        "role": "Editorial Board Member",
-        "company": "IEEE Software",
-        "duration": "Sep 2023 - Present · 2 yrs 9 mos",
-        "description": ""
-      },
-      {
         "role": "Assistant Professor",
         "company": "IIIT Hyderabad",
-        "duration": "Jul 2022 - Present · 3 yrs 11 mos",
+        "duration": "Jul 2022 – Present · 3 yrs 11 mos",
         "description": ""
       },
       {
-        "role": "Founding Minds Software Private Ltd",
-        "company": "Part-time",
-        "duration": "Sep 2020 - Oct 2022 · 2 yrs 2 mos",
-        "description": "Providing consultation for the design and implementation of different platforms across domains such as natural language processing (invoice automation, chatbots), Computer vision (face detection and recognition solution),  etc."
-      },
-      {
-        "role": "Consultant Machine Learning Architect",
-        "company": "",
-        "duration": "Sep 2020 - Oct 2022 · 2 yrs 2 mos",
-        "description": ""
-      },
-      {
-        "role": "Machine Learning Consultant",
-        "company": "",
-        "duration": "Jul 2017 - Sep 2020 · 3 yrs 3 mos",
-        "description": ""
-      },
-      {
-        "role": "Universita degli studi dell'Aquila",
-        "company": "1 yr 9 mos",
-        "duration": "L'Aquila, Abruzzi, Italy",
-        "description": ""
-      },
-      {
-        "role": "Subject Matter Expert - Architecting Intelligent Systems for Master Degree",
-        "company": "Contract",
-        "duration": "Nov 2021 - Jul 2022 · 9 mos",
+        "role": "Editorial Board Member",
+        "company": "IEEE Software",
+        "duration": "Sep 2023 – Present · 2 yrs 9 mos",
         "description": ""
       },
       {
         "role": "Postdoctoral Researcher",
-        "company": "Full-time",
-        "duration": "Feb 2021 - Jul 2022 · 1 yr 6 mos",
+        "company": "Università degli Studi dell'Aquila",
+        "duration": "Feb 2021 – Jul 2022 · 1 yr 6 mos",
         "description": ""
       },
       {
-        "role": "Subject Matter Expert - Software Architecture Course for Master Degree",
-        "company": "Contract",
-        "duration": "Nov 2020 - Jul 2022 · 1 yr 9 mos",
-        "description": ""
-      },
-      {
-        "role": "Campus Ambassador",
-        "company": "AWS Educate",
-        "duration": "Apr 2020 - Apr 2021 · 1 yr 1 mo",
-        "description": ""
+        "role": "Consultant Machine Learning Architect",
+        "company": "Founding Minds Software Private Ltd",
+        "duration": "Sep 2020 – Oct 2022 · 2 yrs 2 mos",
+        "description": "Providing consultation for the design and implementation of different platforms across domains such as NLP, Computer Vision, etc."
       },
       {
         "role": "PHD Student",
-        "company": "GSSI - Gran Sasso Science Institute",
-        "duration": "Nov 2017 - Nov 2020 · 3 yrs 1 mo",
+        "company": "GSSI – Gran Sasso Science Institute",
+        "duration": "Nov 2017 – Nov 2020 · 3 yrs 1 mo",
         "description": ""
       },
       {
         "role": "Product Lead",
         "company": "Knowledge Lens",
-        "duration": "Oct 2016 - Jun 2017 · 9 mos",
-        "description": ""
-      },
-      {
-        "role": "Academic Assistant",
-        "company": "AMRITA VISHWA VIDYAPEETHAM",
-        "duration": "Aug 2014 - Aug 2015 · 1 yr 1 mo",
-        "description": ""
-      },
-      {
-        "role": "Contest Manager ACM ICPC 2014, Asia Amritapuri Site",
-        "company": "ICPC - ACM International Collegiate Programming Contest",
-        "duration": "Oct 2014 - Dec 2014 · 3 mos",
+        "duration": "Oct 2016 – Jun 2017 · 9 mos",
         "description": ""
       },
       {
         "role": "Intern",
         "company": "Infosys",
-        "duration": "Feb 2014 - Jun 2014 · 5 mos",
+        "duration": "Feb 2014 – Jun 2014 · 5 mos",
         "description": ""
       }
     ],
@@ -664,56 +448,44 @@
     "id": "y-raghu-reddy-4759357",
     "type": "faculty",
     "name": "Y. Raghu Reddy",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
       {
         "institution": "Colorado State University",
         "degree": "PhD, Computer Science",
-        "year": "About",
+        "year": "",
         "description": ""
       }
     ],
     "experience": [
       {
-        "role": "IIIT Hyderabad",
-        "company": "15 yrs",
-        "duration": "Apr 2021 - Present · 5 yrs 2 mos",
-        "description": "I am heading the Software Engineering Research Center (SERC). My areas of interest lie in Software Engineering, Human Computer Interaction, and Knowledge Engineering."
-      },
-      {
-        "role": "Program Head, M. Tech in Product Design and Management",
-        "company": "",
-        "duration": "Apr 2021 - Present · 5 yrs 2 mos",
-        "description": ""
+        "role": "Associate Professor",
+        "company": "IIIT Hyderabad",
+        "duration": "Jun 2011 – Present · 15 yrs",
+        "description": "Heading the Software Engineering Research Center (SERC). Areas of interest: Software Engineering, Human Computer Interaction, and Knowledge Engineering."
       },
       {
         "role": "Head, Software Engineering Research Center",
-        "company": "",
-        "duration": "May 2013 - Present · 13 yrs 1 mo",
+        "company": "IIIT Hyderabad",
+        "duration": "May 2013 – Present · 13 yrs 1 mo",
         "description": ""
       },
       {
-        "role": "Associate Professor",
-        "company": "",
-        "duration": "Jun 2011 - Present · 15 yrs",
-        "description": ""
-      },
-      {
-        "role": "Program Director, PG Certificate in Software Engineering for Data Science",
-        "company": "",
-        "duration": "Sep 2020 - Jan 2025 · 4 yrs 5 mos",
+        "role": "Program Head, M.Tech in Product Design and Management",
+        "company": "IIIT Hyderabad",
+        "duration": "Apr 2021 – Present · 5 yrs 2 mos",
         "description": ""
       },
       {
         "role": "Assistant Professor",
         "company": "Rochester Institute of Technology",
-        "duration": "Nov 2005 - May 2011 · 5 yrs 7 mos",
+        "duration": "Nov 2005 – May 2011 · 5 yrs 7 mos",
         "description": ""
       },
       {
         "role": "Instructor",
         "company": "Colorado State University",
-        "duration": "May 2000 - May 2005 · 5 yrs 1 mo",
+        "duration": "May 2000 – May 2005 · 5 yrs 1 mo",
         "description": ""
       }
     ],
@@ -723,116 +495,74 @@
     "id": "rameshl",
     "type": "faculty",
     "name": "Ramesh Loganathan",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
       {
         "institution": "National University of Singapore",
-        "degree": "MBA, (attended 2 semesters)",
+        "degree": "MBA",
         "year": "1999 – 2000",
         "description": ""
       },
       {
         "institution": "Anna University (Guindy)",
         "degree": "M.E, Control Systems & Instrumentation",
-        "year": "Aug 1988 – Jan 1990",
+        "year": "1988 – 1990",
         "description": ""
       },
       {
         "institution": "Sri Venkateswara University",
-        "degree": "B.tech, Electrical and Electronics Engineering",
+        "degree": "B.Tech, Electrical and Electronics Engineering",
         "year": "1984 – 1990",
         "description": ""
       },
       {
-        "institution": "Space central school, Sriharikota",
-        "degree": "High school, CBSE",
+        "institution": "Space Central School, Sriharikota",
+        "degree": "High School, CBSE",
         "year": "1974 – 1984",
         "description": ""
       }
     ],
     "experience": [
       {
-        "role": "IIIT Hyderabad",
-        "company": "23 yrs 10 mos",
-        "duration": "Dec 2016 - Present · 9 yrs 6 mos",
-        "description": "Connecting research and technology from the IIITH labs to industry and the innovation ecosystem.  Facilitate beyond the IIIT incubator and the deep-tech accelerator. Exploring new models to productise research.  Thru technology transfer outreach, custom commissioned  innovation  projects, co-innovation, connecting the extended innovation/startup ecosystem, domain COEs (resident vertical expertise to explore usecases for deeptech), research park and more. And assist innovation initiatives in governments, corporate innovation hubs and social innovation. Since 2026, was made the first Dean of Outreach."
+        "role": "Professor and Dean, Research/Innovation Outreach",
+        "company": "IIIT Hyderabad",
+        "duration": "Dec 2016 – Present · 9 yrs 6 mos",
+        "description": "Connecting research and technology from IIIT-H labs to industry and the innovation ecosystem. Exploring new models to productise research through technology transfer, co-innovation, and research park initiatives."
       },
       {
-        "role": "Professor and Dean Research/Innovation Outreach",
-        "company": "Full-time",
-        "duration": "Dec 2016 - Present · 9 yrs 6 mos",
+        "role": "Adjunct Faculty & Member, Academic Council",
+        "company": "IIIT Hyderabad",
+        "duration": "Aug 2002 – Dec 2016 · 14 yrs 5 mos",
         "description": ""
       },
       {
-        "role": "Adjunct Faculty & member-Academic Council",
-        "company": "",
-        "duration": "Aug 2002 - Dec 2016 · 14 yrs 5 mos",
-        "description": ""
-      },
-      {
-        "role": "Chair",
-        "company": "ACM- Hyderabad Chapter",
-        "duration": "Jan 2012 - Present · 14 yrs 5 mos",
-        "description": ""
-      },
-      {
-        "role": "Co-Founder & StartupSaturday organizer",
-        "company": "HeadStart Network Foundation",
-        "duration": "2007 - Present · 19 yrs 5 mos",
-        "description": ""
-      },
-      {
-        "role": "Chief Innovation Officer (interim)",
-        "company": "State Innovation Cell",
-        "duration": "Mar 2017 - Nov 2017 · 9 mos",
-        "description": ""
-      },
-      {
-        "role": "MD & VP-Products. Hyderabad",
+        "role": "MD & VP-Products",
         "company": "Progress",
-        "duration": "Mar 2008 - Dec 2016 · 8 yrs 10 mos",
+        "duration": "Mar 2008 – Dec 2016 · 8 yrs 10 mos",
         "description": ""
       },
       {
         "role": "VP-Middleware Technologies",
-        "company": "Pramati Technologies, Hyderabad",
-        "duration": "Apr 2006 - Mar 2008 · 2 yrs",
+        "company": "Pramati Technologies",
+        "duration": "Apr 2006 – Mar 2008 · 2 yrs",
         "description": ""
-      },
-      {
-        "role": "Technical Director",
-        "company": "Progress Software (transitioned from Pramati)",
-        "duration": "Apr 2005 - Apr 2006 · 1 yr 1 mo",
-        "description": ""
-      },
-      {
-        "role": "Pramati Technologies",
-        "company": "4 yrs 11 mos",
-        "duration": "May 2000 - Mar 2005 · 4 yrs 11 mos",
-        "description": "Responsible for managing the Product Engineering of Pramati's J2EE infrastructure products. This includes managing the product lines, product releases, product architecture, systems and processes, technology fora interactions and standards/specifications and motivating the high-calibre engineering team."
       },
       {
         "role": "VP-Engineering",
-        "company": "",
-        "duration": "May 2000 - Mar 2005 · 4 yrs 11 mos",
-        "description": ""
-      },
-      {
-        "role": "Director-Engineering",
-        "company": "",
-        "duration": "May 2000 - Jun 2002 · 2 yrs 2 mos",
+        "company": "Pramati Technologies",
+        "duration": "May 2000 – Mar 2005 · 4 yrs 11 mos",
         "description": ""
       },
       {
         "role": "Principal Engineer",
         "company": "Informix Software",
-        "duration": "Oct 1996 - May 2000 · 3 yrs 8 mos",
+        "duration": "Oct 1996 – May 2000 · 3 yrs 8 mos",
         "description": ""
       },
       {
-        "role": "Senior Consultant",
-        "company": "Shell & Compaq- Houston",
-        "duration": "Jun 1994 - Oct 1996 · 2 yrs 5 mos",
+        "role": "Co-Founder & StartupSaturday Organizer",
+        "company": "HeadStart Network Foundation",
+        "duration": "2007 – Present",
         "description": ""
       }
     ],
@@ -842,7 +572,7 @@
     "id": "sandeepkshukla",
     "type": "faculty",
     "name": "Sandeep Shukla",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
       {
         "institution": "University at Albany",
@@ -851,7 +581,7 @@
         "description": ""
       },
       {
-        "institution": "State University of New York - System",
+        "institution": "State University of New York",
         "degree": "MS, Computer Science",
         "year": "1992 – 1995",
         "description": ""
@@ -864,13 +594,13 @@
       },
       {
         "institution": "St. Xavier's College",
-        "degree": "Higher Secondary certificate, Physical Sciences",
+        "degree": "Higher Secondary Certificate, Physical Sciences",
         "year": "1985 – 1987",
         "description": ""
       },
       {
         "institution": "New Alipore Multipurpose School",
-        "degree": "School leaving certificate, General Studies",
+        "degree": "School Leaving Certificate",
         "year": "1974 – 1985",
         "description": ""
       }
@@ -878,74 +608,32 @@
     "experience": [
       {
         "role": "Director",
-        "company": "International Institute of Information Technology Hyderabad (IIITH)",
-        "duration": "Aug 2025 - Present · 10 mos",
-        "description": ""
-      },
-      {
-        "role": "Member of  Governing Council",
-        "company": "CDACINDIA",
-        "duration": "Nov 2025 - Present · 7 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "Aug 2025 – Present · 10 mos",
         "description": ""
       },
       {
         "role": "Director",
-        "company": "ReBIT | Reserve Bank Information Technology Pvt Ltd.",
-        "duration": "Jul 2021 - Present · 4 yrs 11 mos",
-        "description": ""
-      },
-      {
-        "role": "Member, Technology Advisory Committee",
-        "company": "National Payments Corporation Of India (NPCI)",
-        "duration": "Jan 2023 - Present · 3 yrs 5 mos",
-        "description": ""
-      },
-      {
-        "role": "Member Interdisciplinary standing committee on Cyber Security",
-        "company": "Insurance Regulatory and Development Authority of India",
-        "duration": "Sep 2023 - Present · 2 yrs 9 mos",
-        "description": ""
-      },
-      {
-        "role": "International Financial Services Centres Authority",
-        "company": "Freelance",
-        "duration": "Remote",
-        "description": ""
-      },
-      {
-        "role": "Member, Cyber Security Advisory Committee",
-        "company": "",
-        "duration": "Aug 2023 - Present · 2 yrs 10 mos",
-        "description": ""
-      },
-      {
-        "role": "Committee Member, Expert Committee on Asset Tokenization",
-        "company": "",
-        "duration": "Sep 2023 - Present · 2 yrs 9 mos",
-        "description": ""
-      },
-      {
-        "role": "Member, Cyber Security Subcommittee",
-        "company": "Bharath Digital Infrastructure Association BDIA",
-        "duration": "Mar 2026 - Present · 3 mos",
-        "description": ""
-      },
-      {
-        "role": "Member, Advisory Board",
-        "company": "IBDIC (Indian Banks' Digital Infrastructure Company)",
-        "duration": "Nov 2024 - Present · 1 yr 7 mos",
+        "company": "ReBIT – Reserve Bank Information Technology Pvt Ltd",
+        "duration": "Jul 2021 – Present · 4 yrs 11 mos",
         "description": ""
       },
       {
         "role": "Member, IT Strategy Committee",
         "company": "Kotak Mahindra Bank",
-        "duration": "Nov 2022 - Present · 3 yrs 7 mos",
+        "duration": "Nov 2022 – Present · 3 yrs 7 mos",
         "description": ""
       },
       {
-        "role": "Cyber Security Advisor to the IT Strategy and Security Committee at Kotak Securities Ltd.",
-        "company": "Kotak Securities",
-        "duration": "May 2023 - Present · 3 yrs 1 mo",
+        "role": "Member, Technology Advisory Committee",
+        "company": "National Payments Corporation of India (NPCI)",
+        "duration": "Jan 2023 – Present · 3 yrs 5 mos",
+        "description": ""
+      },
+      {
+        "role": "Member, Governing Council",
+        "company": "CDAC India",
+        "duration": "Nov 2025 – Present · 7 mos",
         "description": ""
       }
     ],
@@ -955,7 +643,7 @@
     "id": "pjnarayanan",
     "type": "faculty",
     "name": "P J Narayanan",
-    "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQE-dPuQIFzDig/profile-displayphoto-scale_100_100/B56Z13oskEKkAc-/0/1775828652205?e=1780531200&v=beta&t=tQthwBAZQfR0fayLDfBK5UzRjoTdy89QF0xng0Y4ngg",
+    "photo_url": "",
     "education": [
       {
         "institution": "University of Maryland",
@@ -971,100 +659,58 @@
       },
       {
         "institution": "Maharaja's College, Ernakulam, Kerala",
-        "degree": "Pre-Degree (11th grade), Mathematics, Physics, Chemistry",
+        "degree": "Pre-Degree, Mathematics, Physics, Chemistry",
         "year": "1978 – 1979",
         "description": ""
       },
       {
         "institution": "Mar Athanasius High School, Nedumbassery",
-        "degree": "SSLC, Malayalam, Biology, Maths, Physics, Chemistry, Hindi",
+        "degree": "SSLC",
         "year": "1975 – 1978",
-        "description": ""
-      },
-      {
-        "institution": "HGCUPS, Aaluwa (Alwaye)",
-        "degree": "Seventh Grade, Everything",
-        "year": "1968 – 1975",
-        "description": ""
-      },
-      {
-        "institution": "Indian Institute of Technology, Kharagpur",
-        "degree": "MS, PhD, Computer Science",
-        "year": "1986 – 1992",
         "description": ""
       }
     ],
     "experience": [
       {
-        "role": "International Institute of Information Technology Hyderabad (IIITH)",
-        "company": "25 yrs 6 mos",
-        "duration": "Aug 2025 - Present · 10 mos",
-        "description": ""
-      },
-      {
         "role": "Professor and former Director",
-        "company": "Full-time",
-        "duration": "Aug 2025 - Present · 10 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "Aug 2025 – Present · 10 mos",
         "description": ""
       },
       {
         "role": "Professor and Director",
-        "company": "Full-time",
-        "duration": "Apr 2013 - Aug 2025 · 12 yrs 5 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "Apr 2013 – Aug 2025 · 12 yrs 5 mos",
         "description": ""
       },
       {
         "role": "Professor and Dean (R&D)",
-        "company": "",
-        "duration": "Jun 2006 - Apr 2013 · 6 yrs 11 mos",
-        "description": ""
-      },
-      {
-        "role": "Professor",
-        "company": "Full-time",
-        "duration": "Jul 2004 - May 2006 · 1 yr 11 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "Jun 2006 – Apr 2013 · 6 yrs 11 mos",
         "description": ""
       },
       {
         "role": "Associate Professor",
-        "company": "Full-time",
-        "duration": "Dec 2000 - Jun 2004 · 3 yrs 7 mos",
+        "company": "IIIT Hyderabad",
+        "duration": "Dec 2000 – Jun 2004 · 3 yrs 7 mos",
         "description": ""
       },
       {
         "role": "President",
         "company": "ACM India",
-        "duration": "Jun 2010 - Jun 2014 · 4 yrs 1 mo",
+        "duration": "Jun 2010 – Jun 2014 · 4 yrs 1 mo",
         "description": ""
       },
       {
         "role": "Scientist (D, E) and Head of Vision/VR Groups",
-        "company": "Centre for AI and Robotics (CAIR), DRDO.",
-        "duration": "Sep 1996 - Dec 2000 · 4 yrs 4 mos",
+        "company": "Centre for AI and Robotics (CAIR), DRDO",
+        "duration": "Sep 1996 – Dec 2000 · 4 yrs 4 mos",
         "description": ""
       },
       {
         "role": "Project Scientist",
         "company": "Carnegie Mellon University",
-        "duration": "Oct 1992 - Aug 1996 · 3 yrs 11 mos",
-        "description": ""
-      },
-      {
-        "role": "Graduate Assistant",
-        "company": "University of Maryland",
-        "duration": "Aug 1986 - Oct 1992 · 6 yrs 3 mos",
-        "description": ""
-      },
-      {
-        "role": "Associate Development Engineer",
-        "company": "CMC Ltd",
-        "duration": "Jul 1984 - Aug 1986 · 2 yrs 2 mos",
-        "description": ""
-      },
-      {
-        "role": "Summer Intern",
-        "company": "Nelco Limited",
-        "duration": "May 1983 - Jun 1983 · 2 mos",
+        "duration": "Oct 1992 – Aug 1996 · 3 yrs 11 mos",
         "description": ""
       }
     ],

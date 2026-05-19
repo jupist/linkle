@@ -562,8 +562,31 @@ a:hover {
 
 .game-footer {
 	flex-shrink: 0;
-	padding: 0 16px 40px;
+	padding: 0 16px 16px;
 	background: transparent;
+}
+
+@media (min-width: 768px) {
+	.game-screen {
+		display: block;
+		height: auto;
+		overflow: visible;
+	}
+
+	.game-scroll {
+		overflow: visible;
+	}
+
+	.game-footer {
+		padding: 0;
+	}
+
+	.game-footer-inner {
+		max-width: 1080px;
+		padding: 18px 22px 20px;
+		border-radius: var(--radius);
+		margin: 0 auto 16px;
+	}
 }
 
 .game-footer-inner {
