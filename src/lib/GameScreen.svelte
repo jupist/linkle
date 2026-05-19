@@ -97,179 +97,195 @@
 	}
 </script>
 
-<div class="app">
-	<header class="topbar">
-		<div
-			class="brand"
-			role="button"
-			tabindex="0"
-			onclick={onnext}
-			onkeypress={onnext}
-			title="New round"
-		>
-			<div class="logo">li</div>
-			<span class="name">linkl<em>e</em></span>
-		</div>
-		<div class="topbar-right">
-			<button class="btn btn-ghost" onclick={onskip} disabled={ended}>
-				{@html skip} Skip
-			</button>
-			<div class="counter-pill" title="{usedcount} of {maxguesses} used">
-				<span>{usedcount}/{maxguesses}</span>
-				<span class="dot-row">
-					{#each Array.from({ length: maxguesses }) as _, i}
-						{@const g = guesses[i]}
-						<span class="dot {g ? (g.skipped ? 'skipped' : 'used') : ''}"></span>
-					{/each}
-				</span>
-			</div>
-			<button class="icon-btn" onclick={onopenstats} title="Stats">
-				{@html chart}
-			</button>
-			<button
-				class="icon-btn"
-				onclick={() => (showsettings = !showsettings)}
-				title="Settings"
-				aria-pressed={showsettings}
-			>
-				{@html gear}
-			</button>
-		</div>
-	</header>
-
-	{#if showsettings}
-		<div class="settings-panel">
-			<div class="settings-row">
-				<span class="settings-label">Dark mode</span>
-				<button
-					class="toggle {dark ? 'on' : ''}"
-					role="switch"
-					aria-checked={dark}
-					aria-label="Toggle dark mode"
-					onclick={() => (dark = !dark)}
+<div class="game-screen">
+	<!-- scrollable area -->
+	<div class="game-scroll">
+		<div class="game-inner">
+			<header class="topbar">
+				<div
+					class="brand"
+					role="button"
+					tabindex="0"
+					onclick={onnext}
+					onkeypress={onnext}
+					title="New round"
 				>
-					<i></i>
-				</button>
-			</div>
-			<div class="settings-row">
-				<span class="settings-label">Reveal clues</span>
-				<div class="seg">
-					<button
-						class={revealmode === 'all' ? 'active' : ''}
-						onclick={() => (revealmode = 'all')}
-					>
-						All at once
+					<div class="logo">li</div>
+					<span class="name">linkl<em>e</em></span>
+				</div>
+				<div class="topbar-right">
+					<button class="btn btn-ghost" onclick={onskip} disabled={ended}>
+						{@html skip} Skip
+					</button>
+					<div class="counter-pill" title="{usedcount} of {maxguesses} used">
+						<span>{usedcount}/{maxguesses}</span>
+						<span class="dot-row">
+							{#each Array.from({ length: maxguesses }) as _, i}
+								{@const g = guesses[i]}
+								<span class="dot {g ? (g.skipped ? 'skipped' : 'used') : ''}"></span>
+							{/each}
+						</span>
+					</div>
+					<button class="icon-btn" onclick={onopenstats} title="Stats">
+						{@html chart}
 					</button>
 					<button
-						class={revealmode === 'progressive' ? 'active' : ''}
-						onclick={() => (revealmode = 'progressive')}
+						class="icon-btn"
+						onclick={() => (showsettings = !showsettings)}
+						title="Settings"
+						aria-pressed={showsettings}
 					>
-						One by one
+						{@html gear}
 					</button>
 				</div>
-			</div>
-		</div>
-	{/if}
+			</header>
 
-	<div class="mystery-banner">
-		<div class="redacted-avatar"></div>
-		<div class="redacted-info">
-			<div class="redacted-name"></div>
-			<div class="redacted-tag">— guess who, from their profile below</div>
-		</div>
-	</div>
-
-	<div class="cards">
-		<ProfileCard
-			title="Education"
-			icontype="education"
-			entries={target.education}
-			fieldheading="institution"
-			fieldsub="degree"
-			fieldmeta="year"
-			revealcount={reveals.edu}
-		/>
-		<ProfileCard
-			title="Experience"
-			icontype="experience"
-			entries={target.experience}
-			fieldheading="company"
-			fieldsub="role"
-			fieldmeta="duration"
-			revealcount={reveals.exp}
-		/>
-	</div>
-
-	{#if ended}
-		<ResultCard {target} status={status as 'won' | 'lost'} {guesses} {onnext} onstats={onopenstats} />
-	{:else}
-		<div class="guess-panel">
-			<div class="guess-label">Your guess — {maxguesses - usedcount} left</div>
-			<div class="guess-input-wrap">
-				<input
-					class="guess-input"
-					placeholder="Type a name…"
-					value={query}
-					oninput={(e) => {
-						query = (e.currentTarget as HTMLInputElement).value;
-						showautocomplete = true;
-						activeidx = 0;
-					}}
-					onfocus={() => (showautocomplete = true)}
-					onblur={() => setTimeout(() => (showautocomplete = false), 120)}
-					onkeydown={onkey}
-					autocomplete="off"
-					spellcheck={false}
-				/>
-				<button class="guess-submit" onclick={handlesubmit} disabled={suggestions.length === 0}>
-					{@html send}
-				</button>
-				{#if showautocomplete && suggestions.length > 0}
-					<div class="autocomplete" role="listbox">
-						{#each suggestions as p, i}
-							<div
-								class="autocomplete-item {i === activeidx ? 'active' : ''}"
-								role="option"
-								tabindex="-1"
-								aria-selected={i === activeidx}
-								onmousedown={(e) => {
-									e.preventDefault();
-									submit(p.name);
-								}}
-								onmouseenter={() => (activeidx = i)}
+			{#if showsettings}
+				<div class="settings-panel">
+					<div class="settings-row">
+						<span class="settings-label">Dark mode</span>
+						<button
+							class="toggle {dark ? 'on' : ''}"
+							role="switch"
+							aria-checked={dark}
+							aria-label="Toggle dark mode"
+							onclick={() => (dark = !dark)}
+						>
+							<i></i>
+						</button>
+					</div>
+					<div class="settings-row">
+						<span class="settings-label">Reveal clues</span>
+						<div class="seg">
+							<button
+								class={revealmode === 'all' ? 'active' : ''}
+								onclick={() => (revealmode = 'all')}
 							>
-								<div class="autocomplete-avatar">{initials(p.name)}</div>
-								<div class="autocomplete-text">
-									<div class="autocomplete-name">{p.name}</div>
-									<div class="autocomplete-role">{p.type}</div>
+								All at once
+							</button>
+							<button
+								class={revealmode === 'progressive' ? 'active' : ''}
+								onclick={() => (revealmode = 'progressive')}
+							>
+								One by one
+							</button>
+						</div>
+					</div>
+				</div>
+			{/if}
+
+			<div class="mystery-banner">
+				<div class="redacted-avatar"></div>
+				<div class="redacted-info">
+					<div class="redacted-name"></div>
+					<div class="redacted-tag">— guess who, from their profile below</div>
+				</div>
+			</div>
+
+			<div class="cards">
+				<ProfileCard
+					title="Education"
+					icontype="education"
+					entries={target.education}
+					fieldheading="institution"
+					fieldsub="degree"
+					fieldmeta="year"
+					revealcount={reveals.edu}
+				/>
+				<ProfileCard
+					title="Experience"
+					icontype="experience"
+					entries={target.experience}
+					fieldheading="company"
+					fieldsub="role"
+					fieldmeta="duration"
+					revealcount={reveals.exp}
+				/>
+			</div>
+
+			{#if ended}
+				<ResultCard
+					{target}
+					status={status as 'won' | 'lost'}
+					{guesses}
+					{onnext}
+					onstats={onopenstats}
+				/>
+			{/if}
+
+			<div class="hint">Profiles are fictional, for prototype use only.</div>
+		</div>
+	</div>
+
+	<!-- fixed footer -->
+	{#if !ended}
+		<div class="game-footer">
+			<div class="game-footer-inner">
+				<div class="guess-label">Your guess — {maxguesses - usedcount} left</div>
+				<div class="guess-input-wrap">
+					<input
+						class="guess-input"
+						placeholder="Type a name…"
+						value={query}
+						oninput={(e) => {
+							query = (e.currentTarget as HTMLInputElement).value;
+							showautocomplete = true;
+							activeidx = 0;
+						}}
+						onfocus={() => (showautocomplete = true)}
+						onblur={() => setTimeout(() => (showautocomplete = false), 120)}
+						onkeydown={onkey}
+						autocomplete="off"
+						spellcheck={false}
+					/>
+					<button class="guess-submit" onclick={handlesubmit} disabled={suggestions.length === 0}>
+						{@html send}
+					</button>
+					{#if showautocomplete && suggestions.length > 0}
+						<div class="autocomplete autocomplete-up" role="listbox">
+							{#each suggestions as p, i}
+								<div
+									class="autocomplete-item {i === activeidx ? 'active' : ''}"
+									role="option"
+									tabindex="-1"
+									aria-selected={i === activeidx}
+									onmousedown={(e) => {
+										e.preventDefault();
+										submit(p.name);
+									}}
+									onmouseenter={() => (activeidx = i)}
+								>
+									<div class="autocomplete-avatar">{initials(p.name)}</div>
+									<div class="autocomplete-text">
+										<div class="autocomplete-name">{p.name}</div>
+										<div class="autocomplete-role">{p.type}</div>
+									</div>
 								</div>
+							{/each}
+						</div>
+					{/if}
+				</div>
+
+				{#if guesses.length > 0}
+					<div class="guess-list">
+						{#each guesses as g, i}
+							<div class="guess-row {g.skipped ? 'skipped' : g.correct ? 'correct' : 'wrong'}">
+								<span class="guess-num">{i + 1}</span>
+								<span class="guess-icon">
+									{#if g.skipped}
+										{@html skip}
+									{:else if g.correct}
+										{@html check}
+									{:else}
+										{@html x}
+									{/if}
+								</span>
+								<span class="guess-name">{g.skipped ? 'Skipped' : g.name}</span>
 							</div>
 						{/each}
 					</div>
 				{/if}
 			</div>
-
-			{#if guesses.length > 0}
-				<div class="guess-list">
-					{#each guesses as g, i}
-						<div class="guess-row {g.skipped ? 'skipped' : g.correct ? 'correct' : 'wrong'}">
-							<span class="guess-num">{i + 1}</span>
-							<span class="guess-icon">
-								{#if g.skipped}
-									{@html skip}
-								{:else if g.correct}
-									{@html check}
-								{:else}
-									{@html x}
-								{/if}
-							</span>
-							<span class="guess-name">{g.skipped ? 'Skipped' : g.name}</span>
-						</div>
-					{/each}
-				</div>
-			{/if}
 		</div>
 	{/if}
-
-	<div class="hint">Profiles are fictional, for prototype use only.</div>
 </div>
